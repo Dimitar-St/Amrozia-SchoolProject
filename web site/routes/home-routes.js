@@ -1,5 +1,7 @@
+const HomeController = require('../controllers/home-controller.js');
+
 module.exports = function(router) {
-    router.get('/', (req, res) => {
-        res.render('./home.pug');
-    });
+    const controller = new HomeController();
+
+    router.get('/', (req, res) => controller.loadHomePage(req, res));
 };
