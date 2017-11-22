@@ -1,0 +1,24 @@
+mixin nav()
+    nav(class="#01579b white darken-1")
+          .nav-wrapper
+            a.brand-logo(href='#')
+              img(src="../../public/images/logo.png", alt="Delight")
+            ul#main-menu.right.hide-on-med-and-down
+              li
+                a(href='/menu', style='color: black')
+                  | МЕНЮ
+              li
+                a(href='/for-us', style='color: black')
+                  | ЗА НАС
+              li
+                a(href='#', style='color: black')
+                  | КОНТАКТИ
+              if isAuthenticated
+                li
+                  a(href='#')
+                    | ПОРЪЧАЙ
+              ul#nav-mobile.right.hide-on-med-and-down
+                  li
+                    a.btn(href='/login') Вход
+                  li
+                    a.btn(href='/register') Регистрация

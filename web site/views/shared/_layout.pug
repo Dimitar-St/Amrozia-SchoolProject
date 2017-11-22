@@ -1,0 +1,16 @@
+include navigation
+
+doctype html
+html(lang='bg')
+  head
+   link(rel='stylesheet', href='/libs/materialize-css/dist/css/materialize.css')
+   link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+   link(rel='stylesheet', href='/public/style/style.css')
+   link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Tangerine")
+  body
+    +nav()
+
+    block content
+  script(src='/libs/jquery/dist/jquery.min.js')
+  script(src='/libs/materialize-css/dist/js/materialize.js')
+  script(src='/public/js/materialize-configs.js')
